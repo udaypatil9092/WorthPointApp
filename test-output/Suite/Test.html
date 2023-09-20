@@ -1,0 +1,805 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>49/6/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Sep 20 18:18:29 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>1903 seconds (1903327 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.worthPoint.testLayer.MarksCategoriesTest.verifyMarksCategoriesModulesFunctionalitySaveSearch()'><b>verifyMarksCategoriesModulesFunctionalitySaveSearch</b><br>Test class: com.worthPoint.testLayer.MarksCategoriesTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.xpath: //android.view.View[@content-desc=&quot;Price &quot;]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:125)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4.click(&lt;generated&gt;)
+	at com.worthPoint.pagelayer.MarksCategoriesPage.clickOnPriceOption(MarksCategoriesPage.java:167)
+	at com.worthPoint.testLayer.MarksCategoriesTest.verifyMarksCategoriesModulesFunctionalitySaveSearch(MarksCategoriesTest.java:339)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@6bc72ab6 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:262)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:98)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:118)
+	... 32 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.view.View[@content-desc=&quot;Price &quot;]})
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:77)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$0(AppiumElementLocator.java:119)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:171)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:164)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 34 more
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace384017505", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace384017505'><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.xpath: //android.view.View[@content-desc=&quot;Price &quot;]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:125)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4.click(&lt;generated&gt;)
+	at com.worthPoint.pagelayer.MarksCategoriesPage.clickOnPriceOption(MarksCategoriesPage.java:167)
+	at com.worthPoint.testLayer.MarksCategoriesTest.verifyMarksCategoriesModulesFunctionalitySaveSearch(MarksCategoriesTest.java:339)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@6bc72ab6 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:262)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:98)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:118)
+	... 32 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.view.View[@content-desc=&quot;Price &quot;]})
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:77)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$0(AppiumElementLocator.java:119)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:171)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:164)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 34 more
+</pre></div></td>
+<td>17</td>
+<td>com.worthPoint.testLayer.MarksCategoriesTest@783a467b</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.VisualSearchTest.verifyVisualSearchFunctionalityByGalleryUsingPriceGuide()'><b>verifyVisualSearchFunctionalityByGalleryUsingPriceGuide</b><br>Test class: com.worthPoint.testLayer.VisualSearchTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.xpath: //android.view.View[@content-desc=&quot;Search WorthPoint&quot;]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:125)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4.click(&lt;generated&gt;)
+	at com.worthPoint.pagelayer.VisualSearchPage.clickOnSearchWorthPoint(VisualSearchPage.java:53)
+	at com.worthPoint.testLayer.VisualSearchTest.verifyVisualSearchFunctionalityByGalleryUsingPriceGuide(VisualSearchTest.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@437a4e61 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:262)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:98)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:118)
+	... 32 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.view.View[@content-desc=&quot;Search WorthPoint&quot;]})
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:77)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$0(AppiumElementLocator.java:119)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:171)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:164)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 34 more
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace394581777", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace394581777'><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.xpath: //android.view.View[@content-desc=&quot;Search WorthPoint&quot;]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:125)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4.click(&lt;generated&gt;)
+	at com.worthPoint.pagelayer.VisualSearchPage.clickOnSearchWorthPoint(VisualSearchPage.java:53)
+	at com.worthPoint.testLayer.VisualSearchTest.verifyVisualSearchFunctionalityByGalleryUsingPriceGuide(VisualSearchTest.java:33)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@437a4e61 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:262)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:98)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:118)
+	... 32 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.view.View[@content-desc=&quot;Search WorthPoint&quot;]})
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:77)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$0(AppiumElementLocator.java:119)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:171)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:164)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 34 more
+</pre></div></td>
+<td>10</td>
+<td>com.worthPoint.testLayer.VisualSearchTest@273e7444</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.VaultTest.verifyVaultAddVaultItemWithInsuranceCompanyAndStorageLocationModuleFunctionality()'><b>verifyVaultAddVaultItemWithInsuranceCompanyAndStorageLocationModuleFunctionality</b><br>Test class: com.worthPoint.testLayer.VaultTest</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.worthPoint.testLayer.VaultTest.verifyVaultAddVaultItemWithInsuranceCompanyAndStorageLocationModuleFunctionality(VaultTest.java:1871)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1864933502", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1864933502'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at com.worthPoint.testLayer.VaultTest.verifyVaultAddVaultItemWithInsuranceCompanyAndStorageLocationModuleFunctionality(VaultTest.java:1871)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>125</td>
+<td>com.worthPoint.testLayer.VaultTest@52b1beb6</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.PriceGuideCategoriesTest.verifyPriceGuideCategoriesModulesFunctionalitySaveSearch()'><b>verifyPriceGuideCategoriesModulesFunctionalitySaveSearch</b><br>Test class: com.worthPoint.testLayer.PriceGuideCategoriesTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.xpath: //android.view.View[@content-desc=&quot;Price &quot;]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:125)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4.click(&lt;generated&gt;)
+	at com.worthPoint.pagelayer.PriceGuideCategoriesPage.clickOnPriceOption(PriceGuideCategoriesPage.java:211)
+	at com.worthPoint.testLayer.PriceGuideCategoriesTest.verifyPriceGuideCategoriesModulesFunctionalitySaveSearch(PriceGuideCategoriesTest.java:205)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@145c6e4d (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:262)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:98)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:118)
+	... 32 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.view.View[@content-desc=&quot;Price &quot;]})
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:77)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$0(AppiumElementLocator.java:119)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:171)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:164)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 34 more
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace214179117", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace214179117'><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.xpath: //android.view.View[@content-desc=&quot;Price &quot;]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:125)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4.click(&lt;generated&gt;)
+	at com.worthPoint.pagelayer.PriceGuideCategoriesPage.clickOnPriceOption(PriceGuideCategoriesPage.java:211)
+	at com.worthPoint.testLayer.PriceGuideCategoriesTest.verifyPriceGuideCategoriesModulesFunctionalitySaveSearch(PriceGuideCategoriesTest.java:205)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@145c6e4d (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:262)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:98)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:118)
+	... 32 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.view.View[@content-desc=&quot;Price &quot;]})
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:77)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$0(AppiumElementLocator.java:119)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:171)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:164)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 34 more
+</pre></div></td>
+<td>16</td>
+<td>com.worthPoint.testLayer.PriceGuideCategoriesTest@7db12bb6</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.SearchPreferenceTest.verifyPriceGuideFilterSearchPreferencesOnlyShowItemsWithImagesFunctionality()'><b>verifyPriceGuideFilterSearchPreferencesOnlyShowItemsWithImagesFunctionality</b><br>Test class: com.worthPoint.testLayer.SearchPreferenceTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [913b0687-18f0-45ba-a829-6e016f52de33, findElement {using=xpath, value=CheckboxOnlyShowItemWithImages}]
+Capabilities {appium:appActivity: com.worthpoint.priceguide.M..., appium:appPackage: com.worthpoint.priceguide.dev, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.worthpoint.priceguide.M..., appPackage: com.worthpoint.priceguide.dev, autoGrantPermissions: true, automationName: UIAutomator2, deviceName: &quot;Pixel 2&quot;, platformName: ANDROID, unicodeKeyboard: true}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 2, appium:deviceName: HT79D1A01251, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: HT79D1A01251, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:unicodeKeyboard: true, appium:viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 913b0687-18f0-45ba-a829-6e016f52de33
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.worthPoint.testLayer.SearchPreferenceTest.verifyPriceGuideFilterSearchPreferencesOnlyShowItemsWithImagesFunctionality(SearchPreferenceTest.java:166)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2037251990", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2037251990'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [913b0687-18f0-45ba-a829-6e016f52de33, findElement {using=xpath, value=CheckboxOnlyShowItemWithImages}]
+Capabilities {appium:appActivity: com.worthpoint.priceguide.M..., appium:appPackage: com.worthpoint.priceguide.dev, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.worthpoint.priceguide.M..., appPackage: com.worthpoint.priceguide.dev, autoGrantPermissions: true, automationName: UIAutomator2, deviceName: &quot;Pixel 2&quot;, platformName: ANDROID, unicodeKeyboard: true}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 2, appium:deviceName: HT79D1A01251, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: HT79D1A01251, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:unicodeKeyboard: true, appium:viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 913b0687-18f0-45ba-a829-6e016f52de33
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.worthPoint.testLayer.SearchPreferenceTest.verifyPriceGuideFilterSearchPreferencesOnlyShowItemsWithImagesFunctionality(SearchPreferenceTest.java:166)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>39</td>
+<td>com.worthPoint.testLayer.SearchPreferenceTest@272113c4</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.VisualSearchTest.verifyVisualSearchFunctionalityByGalleryUsingMarks()'><b>verifyVisualSearchFunctionalityByGalleryUsingMarks</b><br>Test class: com.worthPoint.testLayer.VisualSearchTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.view.View[@content-desc=&quot;No Data Available&quot;] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:appActivity: com.worthpoint.priceguide.M..., appium:appPackage: com.worthpoint.priceguide.dev, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.worthpoint.priceguide.M..., appPackage: com.worthpoint.priceguide.dev, autoGrantPermissions: true, automationName: UIAutomator2, deviceName: &quot;Pixel 2&quot;, platformName: ANDROID, unicodeKeyboard: true}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 2, appium:deviceName: HT79D1A01251, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: HT79D1A01251, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:unicodeKeyboard: true, appium:viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 6946192c-35e5-419e-904a-efb3d43acd26
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at utilities.Utilities.explicitWait(Utilities.java:151)
+	at com.worthPoint.testLayer.VisualSearchTest.verifyVisualSearchFunctionalityByGalleryUsingMarks(VisualSearchTest.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace543634584", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace543634584'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.view.View[@content-desc=&quot;No Data Available&quot;] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:appActivity: com.worthpoint.priceguide.M..., appium:appPackage: com.worthpoint.priceguide.dev, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.worthpoint.priceguide.M..., appPackage: com.worthpoint.priceguide.dev, autoGrantPermissions: true, automationName: UIAutomator2, deviceName: &quot;Pixel 2&quot;, platformName: ANDROID, unicodeKeyboard: true}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 2, appium:deviceName: HT79D1A01251, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: HT79D1A01251, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:unicodeKeyboard: true, appium:viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 6946192c-35e5-419e-904a-efb3d43acd26
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at utilities.Utilities.explicitWait(Utilities.java:151)
+	at com.worthPoint.testLayer.VisualSearchTest.verifyVisualSearchFunctionalityByGalleryUsingMarks(VisualSearchTest.java:72)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>36</td>
+<td>com.worthPoint.testLayer.VisualSearchTest@273e7444</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.worthPoint.testLayer.VaultTest.verifyVaultCollectionsHeaderFunctionality()'><b>verifyVaultCollectionsHeaderFunctionality</b><br>Test class: com.worthPoint.testLayer.VaultTest</td>
+<td></td>
+<td>4</td>
+<td>com.worthPoint.testLayer.VaultTest@52b1beb6</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.MarksPopularMarksTest.verifyMarksPopularMarksFunctionalityListandGridView()'><b>verifyMarksPopularMarksFunctionalityListandGridView</b><br>Test class: com.worthPoint.testLayer.MarksPopularMarksTest</td>
+<td></td>
+<td>4</td>
+<td>com.worthPoint.testLayer.MarksPopularMarksTest@53aac487</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.PriceGuideCategoriesTest.verifyPriceGuideCategoryFilterCategoryAdvertisingOption()'><b>verifyPriceGuideCategoryFilterCategoryAdvertisingOption</b><br>Test class: com.worthPoint.testLayer.PriceGuideCategoriesTest</td>
+<td></td>
+<td>23</td>
+<td>com.worthPoint.testLayer.PriceGuideCategoriesTest@7db12bb6</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.MyAccountTest.verifyEditProfileInvalidPhoneNumber()'><b>verifyEditProfileInvalidPhoneNumber</b><br>Test class: com.worthPoint.testLayer.MyAccountTest</td>
+<td></td>
+<td>10</td>
+<td>com.worthPoint.testLayer.MyAccountTest@29215f06</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.VaultTest.verifyUpdateTagNameFunctionality()'><b>verifyUpdateTagNameFunctionality</b><br>Test class: com.worthPoint.testLayer.VaultTest</td>
+<td></td>
+<td>14</td>
+<td>com.worthPoint.testLayer.VaultTest@52b1beb6</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.VaultTest.verifyVaultUpdateCollectionNameFunctionality()'><b>verifyVaultUpdateCollectionNameFunctionality</b><br>Test class: com.worthPoint.testLayer.VaultTest</td>
+<td></td>
+<td>25</td>
+<td>com.worthPoint.testLayer.VaultTest@52b1beb6</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.VaultTest.verifyVaultCreateCollectionFunctionality()'><b>verifyVaultCreateCollectionFunctionality</b><br>Test class: com.worthPoint.testLayer.VaultTest</td>
+<td></td>
+<td>23</td>
+<td>com.worthPoint.testLayer.VaultTest@52b1beb6</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.MarksCategoriesTest.verifyMarksCategoryFilterHeaderFunctionality()'><b>verifyMarksCategoryFilterHeaderFunctionality</b><br>Test class: com.worthPoint.testLayer.MarksCategoriesTest</td>
+<td></td>
+<td>9</td>
+<td>com.worthPoint.testLayer.MarksCategoriesTest@783a467b</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.MyAccountTest.verifyEditProfileWhatDescribeYoutheBestDataUpdatedSuccessfully()'><b>verifyEditProfileWhatDescribeYoutheBestDataUpdatedSuccessfully</b><br>Test class: com.worthPoint.testLayer.MyAccountTest</td>
+<td></td>
+<td>8</td>
+<td>com.worthPoint.testLayer.MyAccountTest@29215f06</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.MarksPopularMarksTest.verifyMarksPopulorMarksFunctionalityListViewClickOnProductandSeeDetails()'><b>verifyMarksPopulorMarksFunctionalityListViewClickOnProductandSeeDetails</b><br>Test class: com.worthPoint.testLayer.MarksPopularMarksTest</td>
+<td></td>
+<td>6</td>
+<td>com.worthPoint.testLayer.MarksPopularMarksTest@53aac487</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.VaultTest.verifyVaultCollectionShareButtonFunctionality()'><b>verifyVaultCollectionShareButtonFunctionality</b><br>Test class: com.worthPoint.testLayer.VaultTest</td>
+<td></td>
+<td>16</td>
+<td>com.worthPoint.testLayer.VaultTest@52b1beb6</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.PriceGuideCategoriesTest.verifyPriceGuideCategoryFilterAlcoholandSmokingOption()'><b>verifyPriceGuideCategoryFilterAlcoholandSmokingOption</b><br>Test class: com.worthPoint.testLayer.PriceGuideCategoriesTest</td>
+<td></td>
+<td>15</td>
+<td>com.worthPoint.testLayer.PriceGuideCategoriesTest@7db12bb6</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.MarksCategoriesTest.verifyMarksCategoriesAdvertisingListViewClickOnProductandSeeDetails()'><b>verifyMarksCategoriesAdvertisingListViewClickOnProductandSeeDetails</b><br>Test class: com.worthPoint.testLayer.MarksCategoriesTest</td>
+<td></td>
+<td>7</td>
+<td>com.worthPoint.testLayer.MarksCategoriesTest@783a467b</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.PriceGuideCategoriesTest.verifyPriceGuideCategoryFilterHeaderFunctionality()'><b>verifyPriceGuideCategoryFilterHeaderFunctionality</b><br>Test class: com.worthPoint.testLayer.PriceGuideCategoriesTest</td>
+<td></td>
+<td>8</td>
+<td>com.worthPoint.testLayer.PriceGuideCategoriesTest@7db12bb6</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.PriceGuidePopularItemsTest.verifyPriceGuidePopularItemsDisplayFunctionality()'><b>verifyPriceGuidePopularItemsDisplayFunctionality</b><br>Test class: com.worthPoint.testLayer.PriceGuidePopularItemsTest</td>
+<td></td>
+<td>4</td>
+<td>com.worthPoint.testLayer.PriceGuidePopularItemsTest@73e9cf30</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.MarksCategoriesTest.verifyMarksCategoriesAdvertisingModuleFunctionality()'><b>verifyMarksCategoriesAdvertisingModuleFunctionality</b><br>Test class: com.worthPoint.testLayer.MarksCategoriesTest</td>
+<td></td>
+<td>6</td>
+<td>com.worthPoint.testLayer.MarksCategoriesTest@783a467b</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.PriceGuidePopularItemsTest.verifyPriceGuidePopulorModulesFunctionalityListViewClickOnProductandSeeDetails()'><b>verifyPriceGuidePopulorModulesFunctionalityListViewClickOnProductandSeeDetails</b><br>Test class: com.worthPoint.testLayer.PriceGuidePopularItemsTest</td>
+<td></td>
+<td>9</td>
+<td>com.worthPoint.testLayer.PriceGuidePopularItemsTest@73e9cf30</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.MyAccountTest.verifyEditProfileHeaders()'><b>verifyEditProfileHeaders</b><br>Test class: com.worthPoint.testLayer.MyAccountTest</td>
+<td></td>
+<td>5</td>
+<td>com.worthPoint.testLayer.MyAccountTest@29215f06</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.VaultTest.verifyVaultMyVaultModuleFunctionality()'><b>verifyVaultMyVaultModuleFunctionality</b><br>Test class: com.worthPoint.testLayer.VaultTest</td>
+<td></td>
+<td>189</td>
+<td>com.worthPoint.testLayer.VaultTest@52b1beb6</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.PriceGuidePopularItemsTest.verifyPriceGuidePopulorModulesFunctionalityListandGridView()'><b>verifyPriceGuidePopulorModulesFunctionalityListandGridView</b><br>Test class: com.worthPoint.testLayer.PriceGuidePopularItemsTest</td>
+<td></td>
+<td>6</td>
+<td>com.worthPoint.testLayer.PriceGuidePopularItemsTest@73e9cf30</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.VaultTest.verifyVaultDeleteCollectionFunctionality()'><b>verifyVaultDeleteCollectionFunctionality</b><br>Test class: com.worthPoint.testLayer.VaultTest</td>
+<td></td>
+<td>16</td>
+<td>com.worthPoint.testLayer.VaultTest@52b1beb6</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.PriceGuideCategoriesTest.verifyPriceGuideCategoryFilterSourceOtherRRAuctionOption()'><b>verifyPriceGuideCategoryFilterSourceOtherRRAuctionOption</b><br>Test class: com.worthPoint.testLayer.PriceGuideCategoriesTest</td>
+<td></td>
+<td>21</td>
+<td>com.worthPoint.testLayer.PriceGuideCategoriesTest@7db12bb6</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.PriceGuideCategoriesTest.verifyPriceGuideCategoriesAdvertisingListViewClickOnProductandSeeDetails()'><b>verifyPriceGuideCategoriesAdvertisingListViewClickOnProductandSeeDetails</b><br>Test class: com.worthPoint.testLayer.PriceGuideCategoriesTest</td>
+<td></td>
+<td>7</td>
+<td>com.worthPoint.testLayer.PriceGuideCategoriesTest@7db12bb6</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.VaultTest.verifyVaultCollectionFilterModuleFunctionality()'><b>verifyVaultCollectionFilterModuleFunctionality</b><br>Test class: com.worthPoint.testLayer.VaultTest</td>
+<td></td>
+<td>111</td>
+<td>com.worthPoint.testLayer.VaultTest@52b1beb6</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.MarksPopularMarksTest.verifyMarksPopulorMarksFunctionalityClickOnProductandSeeDetails()'><b>verifyMarksPopulorMarksFunctionalityClickOnProductandSeeDetails</b><br>Test class: com.worthPoint.testLayer.MarksPopularMarksTest</td>
+<td></td>
+<td>8</td>
+<td>com.worthPoint.testLayer.MarksPopularMarksTest@53aac487</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.PriceGuideCategoriesTest.verifyPriceGuideCategoriesModulesFunctionalityListViewClickOnProductandSeeDetails()'><b>verifyPriceGuideCategoriesModulesFunctionalityListViewClickOnProductandSeeDetails</b><br>Test class: com.worthPoint.testLayer.PriceGuideCategoriesTest</td>
+<td></td>
+<td>9</td>
+<td>com.worthPoint.testLayer.PriceGuideCategoriesTest@7db12bb6</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.MarksPopularMarksTest.verifyMarksPopularMarksFunctionalityFavoriteProduct()'><b>verifyMarksPopularMarksFunctionalityFavoriteProduct</b><br>Test class: com.worthPoint.testLayer.MarksPopularMarksTest</td>
+<td></td>
+<td>16</td>
+<td>com.worthPoint.testLayer.MarksPopularMarksTest@53aac487</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.MarksCategoriesTest.verifyMarksCategoryFilterCategoryAlcoholAndSmokingOption()'><b>verifyMarksCategoryFilterCategoryAlcoholAndSmokingOption</b><br>Test class: com.worthPoint.testLayer.MarksCategoriesTest</td>
+<td></td>
+<td>17</td>
+<td>com.worthPoint.testLayer.MarksCategoriesTest@783a467b</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.PriceGuideCategoriesTest.verifyPriceGuideCategoriesModulesFunctionalityClickOnProductandSeeDetails()'><b>verifyPriceGuideCategoriesModulesFunctionalityClickOnProductandSeeDetails</b><br>Test class: com.worthPoint.testLayer.PriceGuideCategoriesTest</td>
+<td></td>
+<td>11</td>
+<td>com.worthPoint.testLayer.PriceGuideCategoriesTest@7db12bb6</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.MarksCategoriesTest.verifyMarksCategoriesModulesFunctionalityListViewClickOnProductandSeeDetails()'><b>verifyMarksCategoriesModulesFunctionalityListViewClickOnProductandSeeDetails</b><br>Test class: com.worthPoint.testLayer.MarksCategoriesTest</td>
+<td></td>
+<td>12</td>
+<td>com.worthPoint.testLayer.MarksCategoriesTest@783a467b</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.PriceGuideCategoriesTest.verifyPriceGuideCategoryFilterSourceEBayOption()'><b>verifyPriceGuideCategoryFilterSourceEBayOption</b><br>Test class: com.worthPoint.testLayer.PriceGuideCategoriesTest</td>
+<td></td>
+<td>25</td>
+<td>com.worthPoint.testLayer.PriceGuideCategoriesTest@7db12bb6</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.MarksCategoriesTest.verifyMarksCategoriesModulesFunctionalityClickOnProductandSeeDetails()'><b>verifyMarksCategoriesModulesFunctionalityClickOnProductandSeeDetails</b><br>Test class: com.worthPoint.testLayer.MarksCategoriesTest</td>
+<td></td>
+<td>11</td>
+<td>com.worthPoint.testLayer.MarksCategoriesTest@783a467b</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.MarksPopularMarksTest.verifyMarksPopularMarksDisplayFunctionality()'><b>verifyMarksPopularMarksDisplayFunctionality</b><br>Test class: com.worthPoint.testLayer.MarksPopularMarksTest</td>
+<td></td>
+<td>3</td>
+<td>com.worthPoint.testLayer.MarksPopularMarksTest@53aac487</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.VaultTest.verifyVaultCollectionsModuleFunctionality()'><b>verifyVaultCollectionsModuleFunctionality</b><br>Test class: com.worthPoint.testLayer.VaultTest</td>
+<td></td>
+<td>64</td>
+<td>com.worthPoint.testLayer.VaultTest@52b1beb6</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.MyAccountTest.verifyEditProfileRequiredfields()'><b>verifyEditProfileRequiredfields</b><br>Test class: com.worthPoint.testLayer.MyAccountTest</td>
+<td></td>
+<td>10</td>
+<td>com.worthPoint.testLayer.MyAccountTest@29215f06</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.SearchPreferenceTest.verifyPriceGuideFilterSearchPreferencesDisplayFunctionality()'><b>verifyPriceGuideFilterSearchPreferencesDisplayFunctionality</b><br>Test class: com.worthPoint.testLayer.SearchPreferenceTest</td>
+<td></td>
+<td>16</td>
+<td>com.worthPoint.testLayer.SearchPreferenceTest@272113c4</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.VaultTest.verifyVaultMyTagsHeaderFunctionality()'><b>verifyVaultMyTagsHeaderFunctionality</b><br>Test class: com.worthPoint.testLayer.VaultTest</td>
+<td></td>
+<td>5</td>
+<td>com.worthPoint.testLayer.VaultTest@52b1beb6</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.PriceGuidePopularItemsTest.verifyPriceGuidePopulorModulesFunctionalityFavoriteProduct()'><b>verifyPriceGuidePopulorModulesFunctionalityFavoriteProduct</b><br>Test class: com.worthPoint.testLayer.PriceGuidePopularItemsTest</td>
+<td></td>
+<td>13</td>
+<td>com.worthPoint.testLayer.PriceGuidePopularItemsTest@73e9cf30</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.PriceGuideCategoriesTest.verifyPriceGuideCategoriesAdvertisingModuleFunctionality()'><b>verifyPriceGuideCategoriesAdvertisingModuleFunctionality</b><br>Test class: com.worthPoint.testLayer.PriceGuideCategoriesTest</td>
+<td></td>
+<td>7</td>
+<td>com.worthPoint.testLayer.PriceGuideCategoriesTest@7db12bb6</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.MarksPopularMarksTest.verifyMarksPopularMarksFunctionalityProductcLinkShare()'><b>verifyMarksPopularMarksFunctionalityProductcLinkShare</b><br>Test class: com.worthPoint.testLayer.MarksPopularMarksTest</td>
+<td></td>
+<td>11</td>
+<td>com.worthPoint.testLayer.MarksPopularMarksTest@53aac487</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.MyAccountTest.verifyEditProfileBackButtonFunctionality()'><b>verifyEditProfileBackButtonFunctionality</b><br>Test class: com.worthPoint.testLayer.MyAccountTest</td>
+<td></td>
+<td>7</td>
+<td>com.worthPoint.testLayer.MyAccountTest@29215f06</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.MyAccountTest.verifyLogoutFunctionality()'><b>verifyLogoutFunctionality</b><br>Test class: com.worthPoint.testLayer.MyAccountTest</td>
+<td></td>
+<td>5</td>
+<td>com.worthPoint.testLayer.MyAccountTest@29215f06</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.PriceGuidePopularItemsTest.verifyPriceGuidePopulorModulesFunctionalityProductcLinkShare()'><b>verifyPriceGuidePopulorModulesFunctionalityProductcLinkShare</b><br>Test class: com.worthPoint.testLayer.PriceGuidePopularItemsTest</td>
+<td></td>
+<td>14</td>
+<td>com.worthPoint.testLayer.PriceGuidePopularItemsTest@73e9cf30</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.VaultTest.verifyDelateTagFunctionality()'><b>verifyDelateTagFunctionality</b><br>Test class: com.worthPoint.testLayer.VaultTest</td>
+<td></td>
+<td>11</td>
+<td>com.worthPoint.testLayer.VaultTest@52b1beb6</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.MyAccountTest.verifyEditProfileDataUpdatedSuccessfully()'><b>verifyEditProfileDataUpdatedSuccessfully</b><br>Test class: com.worthPoint.testLayer.MyAccountTest</td>
+<td></td>
+<td>11</td>
+<td>com.worthPoint.testLayer.MyAccountTest@29215f06</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.MarksCategoriesTest.verifyMarksCategoryFilterCategoryAdvertisingOption()'><b>verifyMarksCategoryFilterCategoryAdvertisingOption</b><br>Test class: com.worthPoint.testLayer.MarksCategoriesTest</td>
+<td></td>
+<td>17</td>
+<td>com.worthPoint.testLayer.MarksCategoriesTest@783a467b</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.VaultTest.verifyVaultMyTagsModuleFunctionality()'><b>verifyVaultMyTagsModuleFunctionality</b><br>Test class: com.worthPoint.testLayer.VaultTest</td>
+<td></td>
+<td>27</td>
+<td>com.worthPoint.testLayer.VaultTest@52b1beb6</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.PriceGuidePopularItemsTest.verifyPriceGuidePopulorModulesFunctionalityClickOnProductandSeeDetails()'><b>verifyPriceGuidePopulorModulesFunctionalityClickOnProductandSeeDetails</b><br>Test class: com.worthPoint.testLayer.PriceGuidePopularItemsTest</td>
+<td></td>
+<td>18</td>
+<td>com.worthPoint.testLayer.PriceGuidePopularItemsTest@73e9cf30</td></tr>
+<tr>
+<td title='com.worthPoint.testLayer.VaultTest.verifyVaultAddNewTagFunctionality()'><b>verifyVaultAddNewTagFunctionality</b><br>Test class: com.worthPoint.testLayer.VaultTest</td>
+<td></td>
+<td>17</td>
+<td>com.worthPoint.testLayer.VaultTest@52b1beb6</td></tr>
+</table><p>
+</body>
+</html>

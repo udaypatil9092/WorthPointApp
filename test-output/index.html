@@ -1,0 +1,1881 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\other\eclipse-workspace\WorthPointApp\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">55 methods, 6 failed,   49 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.MarksCategoriesTest" class="method navigator-link" hash-for-method="verifyMarksCategoriesModulesFunctionalitySaveSearch">verifyMarksCategoriesModulesFunctionalitySaveSearch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.PriceGuideCategoriesTest" class="method navigator-link" hash-for-method="verifyPriceGuideCategoriesModulesFunctionalitySaveSearch">verifyPriceGuideCategoriesModulesFunctionalitySaveSearch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.SearchPreferenceTest" class="method navigator-link" hash-for-method="verifyPriceGuideFilterSearchPreferencesOnlyShowItemsWithImagesFunctionality">verifyPriceGuideFilterSearchPreferencesOnlyShowItemsWithImagesFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.VaultTest" class="method navigator-link" hash-for-method="verifyVaultAddVaultItemWithInsuranceCompanyAndStorageLocationModuleFunctionality">verifyVaultAddVaultItemWithInsuranceCompanyAndStorageLocationModuleFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.VisualSearchTest" class="method navigator-link" hash-for-method="verifyVisualSearchFunctionalityByGalleryUsingMarks">verifyVisualSearchFunctionalityByGalleryUsingMarks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.VisualSearchTest" class="method navigator-link" hash-for-method="verifyVisualSearchFunctionalityByGalleryUsingPriceGuide">verifyVisualSearchFunctionalityByGalleryUsingPriceGuide</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.VaultTest" class="method navigator-link" hash-for-method="verifyDelateTagFunctionality">verifyDelateTagFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.MyAccountTest" class="method navigator-link" hash-for-method="verifyEditProfileBackButtonFunctionality">verifyEditProfileBackButtonFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.MyAccountTest" class="method navigator-link" hash-for-method="verifyEditProfileDataUpdatedSuccessfully">verifyEditProfileDataUpdatedSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.MyAccountTest" class="method navigator-link" hash-for-method="verifyEditProfileHeaders">verifyEditProfileHeaders</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.MyAccountTest" class="method navigator-link" hash-for-method="verifyEditProfileInvalidPhoneNumber">verifyEditProfileInvalidPhoneNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.MyAccountTest" class="method navigator-link" hash-for-method="verifyEditProfileRequiredfields">verifyEditProfileRequiredfields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.MyAccountTest" class="method navigator-link" hash-for-method="verifyEditProfileWhatDescribeYoutheBestDataUpdatedSuccessfully">verifyEditProfileWhatDescribeYoutheBestDataUpdatedSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.MyAccountTest" class="method navigator-link" hash-for-method="verifyLogoutFunctionality">verifyLogoutFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.MarksCategoriesTest" class="method navigator-link" hash-for-method="verifyMarksCategoriesAdvertisingListViewClickOnProductandSeeDetails">verifyMarksCategoriesAdvertisingListViewClickOnProductandSeeDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.MarksCategoriesTest" class="method navigator-link" hash-for-method="verifyMarksCategoriesAdvertisingModuleFunctionality">verifyMarksCategoriesAdvertisingModuleFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.MarksCategoriesTest" class="method navigator-link" hash-for-method="verifyMarksCategoriesModulesFunctionalityClickOnProductandSeeDetails">verifyMarksCategoriesModulesFunctionalityClickOnProductandSeeDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.MarksCategoriesTest" class="method navigator-link" hash-for-method="verifyMarksCategoriesModulesFunctionalityListViewClickOnProductandSeeDetails">verifyMarksCategoriesModulesFunctionalityListViewClickOnProductandSeeDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.MarksCategoriesTest" class="method navigator-link" hash-for-method="verifyMarksCategoryFilterCategoryAdvertisingOption">verifyMarksCategoryFilterCategoryAdvertisingOption</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.MarksCategoriesTest" class="method navigator-link" hash-for-method="verifyMarksCategoryFilterCategoryAlcoholAndSmokingOption">verifyMarksCategoryFilterCategoryAlcoholAndSmokingOption</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.MarksCategoriesTest" class="method navigator-link" hash-for-method="verifyMarksCategoryFilterHeaderFunctionality">verifyMarksCategoryFilterHeaderFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.MarksPopularMarksTest" class="method navigator-link" hash-for-method="verifyMarksPopularMarksDisplayFunctionality">verifyMarksPopularMarksDisplayFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.MarksPopularMarksTest" class="method navigator-link" hash-for-method="verifyMarksPopularMarksFunctionalityFavoriteProduct">verifyMarksPopularMarksFunctionalityFavoriteProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.MarksPopularMarksTest" class="method navigator-link" hash-for-method="verifyMarksPopularMarksFunctionalityListandGridView">verifyMarksPopularMarksFunctionalityListandGridView</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.MarksPopularMarksTest" class="method navigator-link" hash-for-method="verifyMarksPopularMarksFunctionalityProductcLinkShare">verifyMarksPopularMarksFunctionalityProductcLinkShare</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.MarksPopularMarksTest" class="method navigator-link" hash-for-method="verifyMarksPopulorMarksFunctionalityClickOnProductandSeeDetails">verifyMarksPopulorMarksFunctionalityClickOnProductandSeeDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.MarksPopularMarksTest" class="method navigator-link" hash-for-method="verifyMarksPopulorMarksFunctionalityListViewClickOnProductandSeeDetails">verifyMarksPopulorMarksFunctionalityListViewClickOnProductandSeeDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.PriceGuideCategoriesTest" class="method navigator-link" hash-for-method="verifyPriceGuideCategoriesAdvertisingListViewClickOnProductandSeeDetails">verifyPriceGuideCategoriesAdvertisingListViewClickOnProductandSeeDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.PriceGuideCategoriesTest" class="method navigator-link" hash-for-method="verifyPriceGuideCategoriesAdvertisingModuleFunctionality">verifyPriceGuideCategoriesAdvertisingModuleFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.PriceGuideCategoriesTest" class="method navigator-link" hash-for-method="verifyPriceGuideCategoriesModulesFunctionalityClickOnProductandSeeDetails">verifyPriceGuideCategoriesModulesFunctionalityClickOnProductandSeeDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.PriceGuideCategoriesTest" class="method navigator-link" hash-for-method="verifyPriceGuideCategoriesModulesFunctionalityListViewClickOnProductandSeeDetails">verifyPriceGuideCategoriesModulesFunctionalityListViewClickOnProductandSeeDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.PriceGuideCategoriesTest" class="method navigator-link" hash-for-method="verifyPriceGuideCategoryFilterAlcoholandSmokingOption">verifyPriceGuideCategoryFilterAlcoholandSmokingOption</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.PriceGuideCategoriesTest" class="method navigator-link" hash-for-method="verifyPriceGuideCategoryFilterCategoryAdvertisingOption">verifyPriceGuideCategoryFilterCategoryAdvertisingOption</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.PriceGuideCategoriesTest" class="method navigator-link" hash-for-method="verifyPriceGuideCategoryFilterHeaderFunctionality">verifyPriceGuideCategoryFilterHeaderFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.PriceGuideCategoriesTest" class="method navigator-link" hash-for-method="verifyPriceGuideCategoryFilterSourceEBayOption">verifyPriceGuideCategoryFilterSourceEBayOption</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.PriceGuideCategoriesTest" class="method navigator-link" hash-for-method="verifyPriceGuideCategoryFilterSourceOtherRRAuctionOption">verifyPriceGuideCategoryFilterSourceOtherRRAuctionOption</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.SearchPreferenceTest" class="method navigator-link" hash-for-method="verifyPriceGuideFilterSearchPreferencesDisplayFunctionality">verifyPriceGuideFilterSearchPreferencesDisplayFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.PriceGuidePopularItemsTest" class="method navigator-link" hash-for-method="verifyPriceGuidePopularItemsDisplayFunctionality">verifyPriceGuidePopularItemsDisplayFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.PriceGuidePopularItemsTest" class="method navigator-link" hash-for-method="verifyPriceGuidePopulorModulesFunctionalityClickOnProductandSeeDetails">verifyPriceGuidePopulorModulesFunctionalityClickOnProductandSeeDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.PriceGuidePopularItemsTest" class="method navigator-link" hash-for-method="verifyPriceGuidePopulorModulesFunctionalityFavoriteProduct">verifyPriceGuidePopulorModulesFunctionalityFavoriteProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.PriceGuidePopularItemsTest" class="method navigator-link" hash-for-method="verifyPriceGuidePopulorModulesFunctionalityListViewClickOnProductandSeeDetails">verifyPriceGuidePopulorModulesFunctionalityListViewClickOnProductandSeeDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.PriceGuidePopularItemsTest" class="method navigator-link" hash-for-method="verifyPriceGuidePopulorModulesFunctionalityListandGridView">verifyPriceGuidePopulorModulesFunctionalityListandGridView</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.PriceGuidePopularItemsTest" class="method navigator-link" hash-for-method="verifyPriceGuidePopulorModulesFunctionalityProductcLinkShare">verifyPriceGuidePopulorModulesFunctionalityProductcLinkShare</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.VaultTest" class="method navigator-link" hash-for-method="verifyUpdateTagNameFunctionality">verifyUpdateTagNameFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.VaultTest" class="method navigator-link" hash-for-method="verifyVaultAddNewTagFunctionality">verifyVaultAddNewTagFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.VaultTest" class="method navigator-link" hash-for-method="verifyVaultCollectionFilterModuleFunctionality">verifyVaultCollectionFilterModuleFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.VaultTest" class="method navigator-link" hash-for-method="verifyVaultCollectionShareButtonFunctionality">verifyVaultCollectionShareButtonFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.VaultTest" class="method navigator-link" hash-for-method="verifyVaultCollectionsHeaderFunctionality">verifyVaultCollectionsHeaderFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.VaultTest" class="method navigator-link" hash-for-method="verifyVaultCollectionsModuleFunctionality">verifyVaultCollectionsModuleFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.VaultTest" class="method navigator-link" hash-for-method="verifyVaultCreateCollectionFunctionality">verifyVaultCreateCollectionFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.VaultTest" class="method navigator-link" hash-for-method="verifyVaultDeleteCollectionFunctionality">verifyVaultDeleteCollectionFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.VaultTest" class="method navigator-link" hash-for-method="verifyVaultMyTagsHeaderFunctionality">verifyVaultMyTagsHeaderFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.VaultTest" class="method navigator-link" hash-for-method="verifyVaultMyTagsModuleFunctionality">verifyVaultMyTagsModuleFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.VaultTest" class="method navigator-link" hash-for-method="verifyVaultMyVaultModuleFunctionality">verifyVaultMyVaultModuleFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.worthPoint.testLayer.VaultTest" class="method navigator-link" hash-for-method="verifyVaultUpdateCollectionNameFunctionality">verifyVaultUpdateCollectionNameFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.worthPoint.testLayer.VisualSearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyVisualSearchFunctionalityByGalleryUsingMarks">
+                  </a> <!-- verifyVisualSearchFunctionalityByGalleryUsingMarks -->
+                  <span class="method-name">verifyVisualSearchFunctionalityByGalleryUsingMarks</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.view.View[@content-desc=&quot;No Data Available&quot;] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:appActivity: com.worthpoint.priceguide.M..., appium:appPackage: com.worthpoint.priceguide.dev, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.worthpoint.priceguide.M..., appPackage: com.worthpoint.priceguide.dev, autoGrantPermissions: true, automationName: UIAutomator2, deviceName: &quot;Pixel 2&quot;, platformName: ANDROID, unicodeKeyboard: true}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 2, appium:deviceName: HT79D1A01251, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: HT79D1A01251, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:unicodeKeyboard: true, appium:viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 6946192c-35e5-419e-904a-efb3d43acd26
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at utilities.Utilities.explicitWait(Utilities.java:151)
+	at com.worthPoint.testLayer.VisualSearchTest.verifyVisualSearchFunctionalityByGalleryUsingMarks(VisualSearchTest.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyVisualSearchFunctionalityByGalleryUsingPriceGuide">
+                  </a> <!-- verifyVisualSearchFunctionalityByGalleryUsingPriceGuide -->
+                  <span class="method-name">verifyVisualSearchFunctionalityByGalleryUsingPriceGuide</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.xpath: //android.view.View[@content-desc=&quot;Search WorthPoint&quot;]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:125)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4.click(&lt;generated&gt;)
+	at com.worthPoint.pagelayer.VisualSearchPage.clickOnSearchWorthPoint(VisualSearchPage.java:53)
+	at com.worthPoint.testLayer.VisualSearchTest.verifyVisualSearchFunctionalityByGalleryUsingPriceGuide(VisualSearchTest.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@437a4e61 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:262)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:98)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:118)
+	... 32 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.view.View[@content-desc=&quot;Search WorthPoint&quot;]})
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:77)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$0(AppiumElementLocator.java:119)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:171)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:164)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 34 more
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.worthPoint.testLayer.SearchPreferenceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPriceGuideFilterSearchPreferencesOnlyShowItemsWithImagesFunctionality">
+                  </a> <!-- verifyPriceGuideFilterSearchPreferencesOnlyShowItemsWithImagesFunctionality -->
+                  <span class="method-name">verifyPriceGuideFilterSearchPreferencesOnlyShowItemsWithImagesFunctionality</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [913b0687-18f0-45ba-a829-6e016f52de33, findElement {using=xpath, value=CheckboxOnlyShowItemWithImages}]
+Capabilities {appium:appActivity: com.worthpoint.priceguide.M..., appium:appPackage: com.worthpoint.priceguide.dev, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.worthpoint.priceguide.M..., appPackage: com.worthpoint.priceguide.dev, autoGrantPermissions: true, automationName: UIAutomator2, deviceName: &quot;Pixel 2&quot;, platformName: ANDROID, unicodeKeyboard: true}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: Pixel 2, appium:deviceName: HT79D1A01251, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: HT79D1A01251, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:unicodeKeyboard: true, appium:viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 913b0687-18f0-45ba-a829-6e016f52de33
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.worthPoint.testLayer.SearchPreferenceTest.verifyPriceGuideFilterSearchPreferencesOnlyShowItemsWithImagesFunctionality(SearchPreferenceTest.java:166)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.worthPoint.testLayer.MarksCategoriesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMarksCategoriesModulesFunctionalitySaveSearch">
+                  </a> <!-- verifyMarksCategoriesModulesFunctionalitySaveSearch -->
+                  <span class="method-name">verifyMarksCategoriesModulesFunctionalitySaveSearch</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.xpath: //android.view.View[@content-desc=&quot;Price &quot;]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:125)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4.click(&lt;generated&gt;)
+	at com.worthPoint.pagelayer.MarksCategoriesPage.clickOnPriceOption(MarksCategoriesPage.java:167)
+	at com.worthPoint.testLayer.MarksCategoriesTest.verifyMarksCategoriesModulesFunctionalitySaveSearch(MarksCategoriesTest.java:339)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@6bc72ab6 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:262)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:98)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:118)
+	... 32 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.view.View[@content-desc=&quot;Price &quot;]})
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:77)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$0(AppiumElementLocator.java:119)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:171)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:164)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 34 more
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.worthPoint.testLayer.VaultTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyVaultAddVaultItemWithInsuranceCompanyAndStorageLocationModuleFunctionality">
+                  </a> <!-- verifyVaultAddVaultItemWithInsuranceCompanyAndStorageLocationModuleFunctionality -->
+                  <span class="method-name">verifyVaultAddVaultItemWithInsuranceCompanyAndStorageLocationModuleFunctionality</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.worthPoint.testLayer.VaultTest.verifyVaultAddVaultItemWithInsuranceCompanyAndStorageLocationModuleFunctionality(VaultTest.java:1871)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.worthPoint.testLayer.PriceGuideCategoriesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPriceGuideCategoriesModulesFunctionalitySaveSearch">
+                  </a> <!-- verifyPriceGuideCategoriesModulesFunctionalitySaveSearch -->
+                  <span class="method-name">verifyPriceGuideCategoriesModulesFunctionalitySaveSearch</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.xpath: //android.view.View[@content-desc=&quot;Price &quot;]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:125)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4.click(&lt;generated&gt;)
+	at com.worthPoint.pagelayer.PriceGuideCategoriesPage.clickOnPriceOption(PriceGuideCategoriesPage.java:211)
+	at com.worthPoint.testLayer.PriceGuideCategoriesTest.verifyPriceGuideCategoriesModulesFunctionalitySaveSearch(PriceGuideCategoriesTest.java:205)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@145c6e4d (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:262)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:98)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:118)
+	... 32 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.view.View[@content-desc=&quot;Price &quot;]})
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:77)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$0(AppiumElementLocator.java:119)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:171)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:164)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 34 more
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.worthPoint.testLayer.SearchPreferenceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPriceGuideFilterSearchPreferencesDisplayFunctionality">
+                  </a> <!-- verifyPriceGuideFilterSearchPreferencesDisplayFunctionality -->
+                  <span class="method-name">verifyPriceGuideFilterSearchPreferencesDisplayFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.worthPoint.testLayer.MarksPopularMarksTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMarksPopularMarksDisplayFunctionality">
+                  </a> <!-- verifyMarksPopularMarksDisplayFunctionality -->
+                  <span class="method-name">verifyMarksPopularMarksDisplayFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMarksPopularMarksFunctionalityFavoriteProduct">
+                  </a> <!-- verifyMarksPopularMarksFunctionalityFavoriteProduct -->
+                  <span class="method-name">verifyMarksPopularMarksFunctionalityFavoriteProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMarksPopularMarksFunctionalityListandGridView">
+                  </a> <!-- verifyMarksPopularMarksFunctionalityListandGridView -->
+                  <span class="method-name">verifyMarksPopularMarksFunctionalityListandGridView</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMarksPopularMarksFunctionalityProductcLinkShare">
+                  </a> <!-- verifyMarksPopularMarksFunctionalityProductcLinkShare -->
+                  <span class="method-name">verifyMarksPopularMarksFunctionalityProductcLinkShare</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMarksPopulorMarksFunctionalityClickOnProductandSeeDetails">
+                  </a> <!-- verifyMarksPopulorMarksFunctionalityClickOnProductandSeeDetails -->
+                  <span class="method-name">verifyMarksPopulorMarksFunctionalityClickOnProductandSeeDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMarksPopulorMarksFunctionalityListViewClickOnProductandSeeDetails">
+                  </a> <!-- verifyMarksPopulorMarksFunctionalityListViewClickOnProductandSeeDetails -->
+                  <span class="method-name">verifyMarksPopulorMarksFunctionalityListViewClickOnProductandSeeDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.worthPoint.testLayer.MyAccountTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyEditProfileBackButtonFunctionality">
+                  </a> <!-- verifyEditProfileBackButtonFunctionality -->
+                  <span class="method-name">verifyEditProfileBackButtonFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyEditProfileDataUpdatedSuccessfully">
+                  </a> <!-- verifyEditProfileDataUpdatedSuccessfully -->
+                  <span class="method-name">verifyEditProfileDataUpdatedSuccessfully</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyEditProfileHeaders">
+                  </a> <!-- verifyEditProfileHeaders -->
+                  <span class="method-name">verifyEditProfileHeaders</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyEditProfileInvalidPhoneNumber">
+                  </a> <!-- verifyEditProfileInvalidPhoneNumber -->
+                  <span class="method-name">verifyEditProfileInvalidPhoneNumber</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyEditProfileRequiredfields">
+                  </a> <!-- verifyEditProfileRequiredfields -->
+                  <span class="method-name">verifyEditProfileRequiredfields</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyEditProfileWhatDescribeYoutheBestDataUpdatedSuccessfully">
+                  </a> <!-- verifyEditProfileWhatDescribeYoutheBestDataUpdatedSuccessfully -->
+                  <span class="method-name">verifyEditProfileWhatDescribeYoutheBestDataUpdatedSuccessfully</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLogoutFunctionality">
+                  </a> <!-- verifyLogoutFunctionality -->
+                  <span class="method-name">verifyLogoutFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.worthPoint.testLayer.PriceGuidePopularItemsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPriceGuidePopularItemsDisplayFunctionality">
+                  </a> <!-- verifyPriceGuidePopularItemsDisplayFunctionality -->
+                  <span class="method-name">verifyPriceGuidePopularItemsDisplayFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPriceGuidePopulorModulesFunctionalityClickOnProductandSeeDetails">
+                  </a> <!-- verifyPriceGuidePopulorModulesFunctionalityClickOnProductandSeeDetails -->
+                  <span class="method-name">verifyPriceGuidePopulorModulesFunctionalityClickOnProductandSeeDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPriceGuidePopulorModulesFunctionalityFavoriteProduct">
+                  </a> <!-- verifyPriceGuidePopulorModulesFunctionalityFavoriteProduct -->
+                  <span class="method-name">verifyPriceGuidePopulorModulesFunctionalityFavoriteProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPriceGuidePopulorModulesFunctionalityListViewClickOnProductandSeeDetails">
+                  </a> <!-- verifyPriceGuidePopulorModulesFunctionalityListViewClickOnProductandSeeDetails -->
+                  <span class="method-name">verifyPriceGuidePopulorModulesFunctionalityListViewClickOnProductandSeeDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPriceGuidePopulorModulesFunctionalityListandGridView">
+                  </a> <!-- verifyPriceGuidePopulorModulesFunctionalityListandGridView -->
+                  <span class="method-name">verifyPriceGuidePopulorModulesFunctionalityListandGridView</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPriceGuidePopulorModulesFunctionalityProductcLinkShare">
+                  </a> <!-- verifyPriceGuidePopulorModulesFunctionalityProductcLinkShare -->
+                  <span class="method-name">verifyPriceGuidePopulorModulesFunctionalityProductcLinkShare</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.worthPoint.testLayer.MarksCategoriesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMarksCategoriesAdvertisingListViewClickOnProductandSeeDetails">
+                  </a> <!-- verifyMarksCategoriesAdvertisingListViewClickOnProductandSeeDetails -->
+                  <span class="method-name">verifyMarksCategoriesAdvertisingListViewClickOnProductandSeeDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMarksCategoriesAdvertisingModuleFunctionality">
+                  </a> <!-- verifyMarksCategoriesAdvertisingModuleFunctionality -->
+                  <span class="method-name">verifyMarksCategoriesAdvertisingModuleFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMarksCategoriesModulesFunctionalityClickOnProductandSeeDetails">
+                  </a> <!-- verifyMarksCategoriesModulesFunctionalityClickOnProductandSeeDetails -->
+                  <span class="method-name">verifyMarksCategoriesModulesFunctionalityClickOnProductandSeeDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMarksCategoriesModulesFunctionalityListViewClickOnProductandSeeDetails">
+                  </a> <!-- verifyMarksCategoriesModulesFunctionalityListViewClickOnProductandSeeDetails -->
+                  <span class="method-name">verifyMarksCategoriesModulesFunctionalityListViewClickOnProductandSeeDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMarksCategoryFilterCategoryAdvertisingOption">
+                  </a> <!-- verifyMarksCategoryFilterCategoryAdvertisingOption -->
+                  <span class="method-name">verifyMarksCategoryFilterCategoryAdvertisingOption</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMarksCategoryFilterCategoryAlcoholAndSmokingOption">
+                  </a> <!-- verifyMarksCategoryFilterCategoryAlcoholAndSmokingOption -->
+                  <span class="method-name">verifyMarksCategoryFilterCategoryAlcoholAndSmokingOption</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMarksCategoryFilterHeaderFunctionality">
+                  </a> <!-- verifyMarksCategoryFilterHeaderFunctionality -->
+                  <span class="method-name">verifyMarksCategoryFilterHeaderFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.worthPoint.testLayer.VaultTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDelateTagFunctionality">
+                  </a> <!-- verifyDelateTagFunctionality -->
+                  <span class="method-name">verifyDelateTagFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUpdateTagNameFunctionality">
+                  </a> <!-- verifyUpdateTagNameFunctionality -->
+                  <span class="method-name">verifyUpdateTagNameFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyVaultAddNewTagFunctionality">
+                  </a> <!-- verifyVaultAddNewTagFunctionality -->
+                  <span class="method-name">verifyVaultAddNewTagFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyVaultCollectionFilterModuleFunctionality">
+                  </a> <!-- verifyVaultCollectionFilterModuleFunctionality -->
+                  <span class="method-name">verifyVaultCollectionFilterModuleFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyVaultCollectionShareButtonFunctionality">
+                  </a> <!-- verifyVaultCollectionShareButtonFunctionality -->
+                  <span class="method-name">verifyVaultCollectionShareButtonFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyVaultCollectionsHeaderFunctionality">
+                  </a> <!-- verifyVaultCollectionsHeaderFunctionality -->
+                  <span class="method-name">verifyVaultCollectionsHeaderFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyVaultCollectionsModuleFunctionality">
+                  </a> <!-- verifyVaultCollectionsModuleFunctionality -->
+                  <span class="method-name">verifyVaultCollectionsModuleFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyVaultCreateCollectionFunctionality">
+                  </a> <!-- verifyVaultCreateCollectionFunctionality -->
+                  <span class="method-name">verifyVaultCreateCollectionFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyVaultDeleteCollectionFunctionality">
+                  </a> <!-- verifyVaultDeleteCollectionFunctionality -->
+                  <span class="method-name">verifyVaultDeleteCollectionFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyVaultMyTagsHeaderFunctionality">
+                  </a> <!-- verifyVaultMyTagsHeaderFunctionality -->
+                  <span class="method-name">verifyVaultMyTagsHeaderFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyVaultMyTagsModuleFunctionality">
+                  </a> <!-- verifyVaultMyTagsModuleFunctionality -->
+                  <span class="method-name">verifyVaultMyTagsModuleFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyVaultMyVaultModuleFunctionality">
+                  </a> <!-- verifyVaultMyVaultModuleFunctionality -->
+                  <span class="method-name">verifyVaultMyVaultModuleFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyVaultUpdateCollectionNameFunctionality">
+                  </a> <!-- verifyVaultUpdateCollectionNameFunctionality -->
+                  <span class="method-name">verifyVaultUpdateCollectionNameFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.worthPoint.testLayer.PriceGuideCategoriesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPriceGuideCategoriesAdvertisingListViewClickOnProductandSeeDetails">
+                  </a> <!-- verifyPriceGuideCategoriesAdvertisingListViewClickOnProductandSeeDetails -->
+                  <span class="method-name">verifyPriceGuideCategoriesAdvertisingListViewClickOnProductandSeeDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPriceGuideCategoriesAdvertisingModuleFunctionality">
+                  </a> <!-- verifyPriceGuideCategoriesAdvertisingModuleFunctionality -->
+                  <span class="method-name">verifyPriceGuideCategoriesAdvertisingModuleFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPriceGuideCategoriesModulesFunctionalityClickOnProductandSeeDetails">
+                  </a> <!-- verifyPriceGuideCategoriesModulesFunctionalityClickOnProductandSeeDetails -->
+                  <span class="method-name">verifyPriceGuideCategoriesModulesFunctionalityClickOnProductandSeeDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPriceGuideCategoriesModulesFunctionalityListViewClickOnProductandSeeDetails">
+                  </a> <!-- verifyPriceGuideCategoriesModulesFunctionalityListViewClickOnProductandSeeDetails -->
+                  <span class="method-name">verifyPriceGuideCategoriesModulesFunctionalityListViewClickOnProductandSeeDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPriceGuideCategoryFilterAlcoholandSmokingOption">
+                  </a> <!-- verifyPriceGuideCategoryFilterAlcoholandSmokingOption -->
+                  <span class="method-name">verifyPriceGuideCategoryFilterAlcoholandSmokingOption</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPriceGuideCategoryFilterCategoryAdvertisingOption">
+                  </a> <!-- verifyPriceGuideCategoryFilterCategoryAdvertisingOption -->
+                  <span class="method-name">verifyPriceGuideCategoryFilterCategoryAdvertisingOption</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPriceGuideCategoryFilterHeaderFunctionality">
+                  </a> <!-- verifyPriceGuideCategoryFilterHeaderFunctionality -->
+                  <span class="method-name">verifyPriceGuideCategoryFilterHeaderFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPriceGuideCategoryFilterSourceEBayOption">
+                  </a> <!-- verifyPriceGuideCategoryFilterSourceEBayOption -->
+                  <span class="method-name">verifyPriceGuideCategoryFilterSourceEBayOption</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPriceGuideCategoryFilterSourceOtherRRAuctionOption">
+                  </a> <!-- verifyPriceGuideCategoryFilterSourceOtherRRAuctionOption -->
+                  <span class="method-name">verifyPriceGuideCategoryFilterSourceOtherRRAuctionOption</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\other\eclipse-workspace\WorthPointApp\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.worthPoint.testLayer.MyAccountTest&quot;/&gt;
+      &lt;class name=&quot;com.worthPoint.testLayer.MarksPopularMarksTest&quot;/&gt;
+      &lt;class name=&quot;com.worthPoint.testLayer.VaultTest&quot;/&gt;
+      &lt;class name=&quot;com.worthPoint.testLayer.VisualSearchTest&quot;/&gt;
+      &lt;class name=&quot;com.worthPoint.testLayer.PriceGuideCategoriesTest&quot;/&gt;
+      &lt;class name=&quot;com.worthPoint.testLayer.MarksCategoriesTest&quot;/&gt;
+      &lt;class name=&quot;com.worthPoint.testLayer.SearchPreferenceTest&quot;/&gt;
+      &lt;class name=&quot;com.worthPoint.testLayer.PriceGuidePopularItemsTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (8 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(55);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyVaultMyVaultModuleFunctionality')
+data.setCell(0, 2, 'com.worthPoint.testLayer.VaultTest')
+data.setCell(0, 3, 189160);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyVaultAddVaultItemWithInsuranceCompanyAndStorageLocationModuleFunctionality')
+data.setCell(1, 2, 'com.worthPoint.testLayer.VaultTest')
+data.setCell(1, 3, 125568);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyVaultCollectionFilterModuleFunctionality')
+data.setCell(2, 2, 'com.worthPoint.testLayer.VaultTest')
+data.setCell(2, 3, 111535);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyVaultCollectionsModuleFunctionality')
+data.setCell(3, 2, 'com.worthPoint.testLayer.VaultTest')
+data.setCell(3, 3, 64487);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyPriceGuideFilterSearchPreferencesOnlyShowItemsWithImagesFunctionality')
+data.setCell(4, 2, 'com.worthPoint.testLayer.SearchPreferenceTest')
+data.setCell(4, 3, 39751);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyVisualSearchFunctionalityByGalleryUsingMarks')
+data.setCell(5, 2, 'com.worthPoint.testLayer.VisualSearchTest')
+data.setCell(5, 3, 36169);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyVaultMyTagsModuleFunctionality')
+data.setCell(6, 2, 'com.worthPoint.testLayer.VaultTest')
+data.setCell(6, 3, 27158);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyVaultUpdateCollectionNameFunctionality')
+data.setCell(7, 2, 'com.worthPoint.testLayer.VaultTest')
+data.setCell(7, 3, 25847);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyPriceGuideCategoryFilterSourceEBayOption')
+data.setCell(8, 2, 'com.worthPoint.testLayer.PriceGuideCategoriesTest')
+data.setCell(8, 3, 25307);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyVaultCreateCollectionFunctionality')
+data.setCell(9, 2, 'com.worthPoint.testLayer.VaultTest')
+data.setCell(9, 3, 23750);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyPriceGuideCategoryFilterCategoryAdvertisingOption')
+data.setCell(10, 2, 'com.worthPoint.testLayer.PriceGuideCategoriesTest')
+data.setCell(10, 3, 23728);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyPriceGuideCategoryFilterSourceOtherRRAuctionOption')
+data.setCell(11, 2, 'com.worthPoint.testLayer.PriceGuideCategoriesTest')
+data.setCell(11, 3, 21588);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyPriceGuidePopulorModulesFunctionalityClickOnProductandSeeDetails')
+data.setCell(12, 2, 'com.worthPoint.testLayer.PriceGuidePopularItemsTest')
+data.setCell(12, 3, 18992);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyVaultAddNewTagFunctionality')
+data.setCell(13, 2, 'com.worthPoint.testLayer.VaultTest')
+data.setCell(13, 3, 17833);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyMarksCategoryFilterCategoryAlcoholAndSmokingOption')
+data.setCell(14, 2, 'com.worthPoint.testLayer.MarksCategoriesTest')
+data.setCell(14, 3, 17728);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyMarksCategoriesModulesFunctionalitySaveSearch')
+data.setCell(15, 2, 'com.worthPoint.testLayer.MarksCategoriesTest')
+data.setCell(15, 3, 17573);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifyMarksCategoryFilterCategoryAdvertisingOption')
+data.setCell(16, 2, 'com.worthPoint.testLayer.MarksCategoriesTest')
+data.setCell(16, 3, 17086);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verifyPriceGuideFilterSearchPreferencesDisplayFunctionality')
+data.setCell(17, 2, 'com.worthPoint.testLayer.SearchPreferenceTest')
+data.setCell(17, 3, 16945);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifyVaultCollectionShareButtonFunctionality')
+data.setCell(18, 2, 'com.worthPoint.testLayer.VaultTest')
+data.setCell(18, 3, 16810);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'verifyPriceGuideCategoriesModulesFunctionalitySaveSearch')
+data.setCell(19, 2, 'com.worthPoint.testLayer.PriceGuideCategoriesTest')
+data.setCell(19, 3, 16651);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'verifyMarksPopularMarksFunctionalityFavoriteProduct')
+data.setCell(20, 2, 'com.worthPoint.testLayer.MarksPopularMarksTest')
+data.setCell(20, 3, 16627);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'verifyVaultDeleteCollectionFunctionality')
+data.setCell(21, 2, 'com.worthPoint.testLayer.VaultTest')
+data.setCell(21, 3, 16539);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'verifyPriceGuideCategoryFilterAlcoholandSmokingOption')
+data.setCell(22, 2, 'com.worthPoint.testLayer.PriceGuideCategoriesTest')
+data.setCell(22, 3, 15984);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'verifyUpdateTagNameFunctionality')
+data.setCell(23, 2, 'com.worthPoint.testLayer.VaultTest')
+data.setCell(23, 3, 14626);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'verifyPriceGuidePopulorModulesFunctionalityProductcLinkShare')
+data.setCell(24, 2, 'com.worthPoint.testLayer.PriceGuidePopularItemsTest')
+data.setCell(24, 3, 14311);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'verifyPriceGuidePopulorModulesFunctionalityFavoriteProduct')
+data.setCell(25, 2, 'com.worthPoint.testLayer.PriceGuidePopularItemsTest')
+data.setCell(25, 3, 13748);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'verifyMarksCategoriesModulesFunctionalityListViewClickOnProductandSeeDetails')
+data.setCell(26, 2, 'com.worthPoint.testLayer.MarksCategoriesTest')
+data.setCell(26, 3, 12253);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'verifyDelateTagFunctionality')
+data.setCell(27, 2, 'com.worthPoint.testLayer.VaultTest')
+data.setCell(27, 3, 11955);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'verifyMarksCategoriesModulesFunctionalityClickOnProductandSeeDetails')
+data.setCell(28, 2, 'com.worthPoint.testLayer.MarksCategoriesTest')
+data.setCell(28, 3, 11382);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'verifyPriceGuideCategoriesModulesFunctionalityClickOnProductandSeeDetails')
+data.setCell(29, 2, 'com.worthPoint.testLayer.PriceGuideCategoriesTest')
+data.setCell(29, 3, 11360);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'verifyEditProfileDataUpdatedSuccessfully')
+data.setCell(30, 2, 'com.worthPoint.testLayer.MyAccountTest')
+data.setCell(30, 3, 11314);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'verifyMarksPopularMarksFunctionalityProductcLinkShare')
+data.setCell(31, 2, 'com.worthPoint.testLayer.MarksPopularMarksTest')
+data.setCell(31, 3, 11138);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'verifyEditProfileInvalidPhoneNumber')
+data.setCell(32, 2, 'com.worthPoint.testLayer.MyAccountTest')
+data.setCell(32, 3, 10752);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'verifyEditProfileRequiredfields')
+data.setCell(33, 2, 'com.worthPoint.testLayer.MyAccountTest')
+data.setCell(33, 3, 10304);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'verifyVisualSearchFunctionalityByGalleryUsingPriceGuide')
+data.setCell(34, 2, 'com.worthPoint.testLayer.VisualSearchTest')
+data.setCell(34, 3, 10181);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'verifyPriceGuidePopulorModulesFunctionalityListViewClickOnProductandSeeDetails')
+data.setCell(35, 2, 'com.worthPoint.testLayer.PriceGuidePopularItemsTest')
+data.setCell(35, 3, 9597);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'verifyPriceGuideCategoriesModulesFunctionalityListViewClickOnProductandSeeDetails')
+data.setCell(36, 2, 'com.worthPoint.testLayer.PriceGuideCategoriesTest')
+data.setCell(36, 3, 9387);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'verifyMarksCategoryFilterHeaderFunctionality')
+data.setCell(37, 2, 'com.worthPoint.testLayer.MarksCategoriesTest')
+data.setCell(37, 3, 9292);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'verifyPriceGuideCategoryFilterHeaderFunctionality')
+data.setCell(38, 2, 'com.worthPoint.testLayer.PriceGuideCategoriesTest')
+data.setCell(38, 3, 8868);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'verifyMarksPopulorMarksFunctionalityClickOnProductandSeeDetails')
+data.setCell(39, 2, 'com.worthPoint.testLayer.MarksPopularMarksTest')
+data.setCell(39, 3, 8669);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'verifyEditProfileWhatDescribeYoutheBestDataUpdatedSuccessfully')
+data.setCell(40, 2, 'com.worthPoint.testLayer.MyAccountTest')
+data.setCell(40, 3, 8047);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'verifyMarksCategoriesAdvertisingListViewClickOnProductandSeeDetails')
+data.setCell(41, 2, 'com.worthPoint.testLayer.MarksCategoriesTest')
+data.setCell(41, 3, 7952);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'verifyPriceGuideCategoriesAdvertisingModuleFunctionality')
+data.setCell(42, 2, 'com.worthPoint.testLayer.PriceGuideCategoriesTest')
+data.setCell(42, 3, 7940);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'verifyEditProfileBackButtonFunctionality')
+data.setCell(43, 2, 'com.worthPoint.testLayer.MyAccountTest')
+data.setCell(43, 3, 7737);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'verifyPriceGuideCategoriesAdvertisingListViewClickOnProductandSeeDetails')
+data.setCell(44, 2, 'com.worthPoint.testLayer.PriceGuideCategoriesTest')
+data.setCell(44, 3, 7068);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'verifyMarksPopulorMarksFunctionalityListViewClickOnProductandSeeDetails')
+data.setCell(45, 2, 'com.worthPoint.testLayer.MarksPopularMarksTest')
+data.setCell(45, 3, 6839);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'verifyMarksCategoriesAdvertisingModuleFunctionality')
+data.setCell(46, 2, 'com.worthPoint.testLayer.MarksCategoriesTest')
+data.setCell(46, 3, 6767);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'verifyPriceGuidePopulorModulesFunctionalityListandGridView')
+data.setCell(47, 2, 'com.worthPoint.testLayer.PriceGuidePopularItemsTest')
+data.setCell(47, 3, 6533);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'verifyLogoutFunctionality')
+data.setCell(48, 2, 'com.worthPoint.testLayer.MyAccountTest')
+data.setCell(48, 3, 5844);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'verifyVaultMyTagsHeaderFunctionality')
+data.setCell(49, 2, 'com.worthPoint.testLayer.VaultTest')
+data.setCell(49, 3, 5736);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'verifyEditProfileHeaders')
+data.setCell(50, 2, 'com.worthPoint.testLayer.MyAccountTest')
+data.setCell(50, 3, 5635);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'verifyPriceGuidePopularItemsDisplayFunctionality')
+data.setCell(51, 2, 'com.worthPoint.testLayer.PriceGuidePopularItemsTest')
+data.setCell(51, 3, 4979);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'verifyMarksPopularMarksFunctionalityListandGridView')
+data.setCell(52, 2, 'com.worthPoint.testLayer.MarksPopularMarksTest')
+data.setCell(52, 3, 4856);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'verifyVaultCollectionsHeaderFunctionality')
+data.setCell(53, 2, 'com.worthPoint.testLayer.VaultTest')
+data.setCell(53, 3, 4474);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'verifyMarksPopularMarksDisplayFunctionality')
+data.setCell(54, 2, 'com.worthPoint.testLayer.MarksPopularMarksTest')
+data.setCell(54, 3, 3409);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 19 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.worthPoint.testLayer.MyAccountTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">10537 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyEditProfileHeaders</span>
+                <span class="method-start">22359 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">28010 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyEditProfileRequiredfields</span>
+                <span class="method-start">39873 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">50182 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyEditProfileInvalidPhoneNumber</span>
+                <span class="method-start">61773 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">72530 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyEditProfileDataUpdatedSuccessfully</span>
+                <span class="method-start">83510 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">94825 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyEditProfileWhatDescribeYoutheBestDataUpdatedSuccessfully</span>
+                <span class="method-start">106003 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">114056 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyEditProfileBackButtonFunctionality</span>
+                <span class="method-start">126338 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">134080 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLogoutFunctionality</span>
+                <span class="method-start">145278 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">151127 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.worthPoint.testLayer.MarksPopularMarksTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">151690 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">159745 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyMarksPopularMarksDisplayFunctionality</span>
+                <span class="method-start">171276 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">174691 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyMarksPopularMarksFunctionalityListandGridView</span>
+                <span class="method-start">186487 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">191356 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyMarksPopulorMarksFunctionalityClickOnProductandSeeDetails</span>
+                <span class="method-start">203242 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">211915 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyMarksPopulorMarksFunctionalityListViewClickOnProductandSeeDetails</span>
+                <span class="method-start">224334 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">231177 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyMarksPopularMarksFunctionalityProductcLinkShare</span>
+                <span class="method-start">242778 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">253918 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyMarksPopularMarksFunctionalityFavoriteProduct</span>
+                <span class="method-start">265677 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">282305 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.worthPoint.testLayer.VaultTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">282744 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">290584 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyVaultMyTagsHeaderFunctionality</span>
+                <span class="method-start">301220 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">306961 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyVaultAddNewTagFunctionality</span>
+                <span class="method-start">319031 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">336868 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUpdateTagNameFunctionality</span>
+                <span class="method-start">348758 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">363388 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDelateTagFunctionality</span>
+                <span class="method-start">374525 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">386484 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyVaultMyTagsModuleFunctionality</span>
+                <span class="method-start">397971 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">425132 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyVaultCollectionsHeaderFunctionality</span>
+                <span class="method-start">436310 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">440787 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyVaultCreateCollectionFunctionality</span>
+                <span class="method-start">452542 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">476297 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyVaultCollectionShareButtonFunctionality</span>
+                <span class="method-start">487893 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">504706 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyVaultUpdateCollectionNameFunctionality</span>
+                <span class="method-start">515888 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">541740 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyVaultDeleteCollectionFunctionality</span>
+                <span class="method-start">553824 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">570365 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyVaultCollectionsModuleFunctionality</span>
+                <span class="method-start">581689 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">646180 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyVaultCollectionFilterModuleFunctionality</span>
+                <span class="method-start">657523 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">769062 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyVaultMyVaultModuleFunctionality</span>
+                <span class="method-start">780447 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">969610 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyVaultAddVaultItemWithInsuranceCompanyAndStorageLocationModuleFunctionality</span>
+                <span class="method-start">980930 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1106503 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.worthPoint.testLayer.VisualSearchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">1107084 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1115067 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyVisualSearchFunctionalityByGalleryUsingPriceGuide</span>
+                <span class="method-start">1135478 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1145664 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyVisualSearchFunctionalityByGalleryUsingMarks</span>
+                <span class="method-start">1159978 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1196151 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.worthPoint.testLayer.PriceGuideCategoriesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">1196823 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1204654 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPriceGuideCategoriesAdvertisingModuleFunctionality</span>
+                <span class="method-start">1215793 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1223737 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPriceGuideCategoriesAdvertisingListViewClickOnProductandSeeDetails</span>
+                <span class="method-start">1235554 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1242626 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPriceGuideCategoriesModulesFunctionalityClickOnProductandSeeDetails</span>
+                <span class="method-start">1254143 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1265507 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPriceGuideCategoriesModulesFunctionalityListViewClickOnProductandSeeDetails</span>
+                <span class="method-start">1277290 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1286681 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyPriceGuideCategoriesModulesFunctionalitySaveSearch</span>
+                <span class="method-start">1298171 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1314826 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPriceGuideCategoryFilterHeaderFunctionality</span>
+                <span class="method-start">1326756 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1335627 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPriceGuideCategoryFilterCategoryAdvertisingOption</span>
+                <span class="method-start">1346565 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1370296 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPriceGuideCategoryFilterAlcoholandSmokingOption</span>
+                <span class="method-start">1381182 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1397170 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPriceGuideCategoryFilterSourceEBayOption</span>
+                <span class="method-start">1408653 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1433964 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPriceGuideCategoryFilterSourceOtherRRAuctionOption</span>
+                <span class="method-start">1445388 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1466978 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.worthPoint.testLayer.MarksCategoriesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">1467548 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1475567 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyMarksCategoriesAdvertisingModuleFunctionality</span>
+                <span class="method-start">1486789 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1493560 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyMarksCategoriesAdvertisingListViewClickOnProductandSeeDetails</span>
+                <span class="method-start">1504888 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1512843 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyMarksCategoriesModulesFunctionalityClickOnProductandSeeDetails</span>
+                <span class="method-start">1524308 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1535694 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyMarksCategoriesModulesFunctionalityListViewClickOnProductandSeeDetails</span>
+                <span class="method-start">1547019 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1559275 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyMarksCategoryFilterHeaderFunctionality</span>
+                <span class="method-start">1570751 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1580046 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyMarksCategoryFilterCategoryAdvertisingOption</span>
+                <span class="method-start">1590944 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1608034 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyMarksCategoryFilterCategoryAlcoholAndSmokingOption</span>
+                <span class="method-start">1619478 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1637209 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMarksCategoriesModulesFunctionalitySaveSearch</span>
+                <span class="method-start">1648576 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1666154 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.worthPoint.testLayer.SearchPreferenceTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">1666826 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1674959 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPriceGuideFilterSearchPreferencesDisplayFunctionality</span>
+                <span class="method-start">1686491 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1703439 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyPriceGuideFilterSearchPreferencesOnlyShowItemsWithImagesFunctionality</span>
+                <span class="method-start">1715540 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1755296 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.worthPoint.testLayer.PriceGuidePopularItemsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">1755961 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1763996 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPriceGuidePopularItemsDisplayFunctionality</span>
+                <span class="method-start">1775416 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1780397 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPriceGuidePopulorModulesFunctionalityListandGridView</span>
+                <span class="method-start">1791782 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1798318 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPriceGuidePopulorModulesFunctionalityClickOnProductandSeeDetails</span>
+                <span class="method-start">1809474 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1828470 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPriceGuidePopulorModulesFunctionalityListViewClickOnProductandSeeDetails</span>
+                <span class="method-start">1840329 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1849929 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPriceGuidePopulorModulesFunctionalityProductcLinkShare</span>
+                <span class="method-start">1861411 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">1875726 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPriceGuidePopulorModulesFunctionalityFavoriteProduct</span>
+                <span class="method-start">1889143 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1902892 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
