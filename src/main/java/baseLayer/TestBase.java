@@ -103,7 +103,7 @@ public class TestBase {
 		loginPage = new LoginPage(driver); //(if you want run login test class then keep only login object and remain comment out)//
 		
 //		loginPage.clickOnNext();
-//		loginPage.clickOnGetStarted();
+//		loginPage.clickOnGetStarted();  //not needed
 		
 		Uninterruptibles.sleepUninterruptibly(Duration.ofMillis(1000));
 		
